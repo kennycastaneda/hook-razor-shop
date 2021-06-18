@@ -20,14 +20,22 @@ function Layout() {
             <Routes wide={wide} />
          </div>
          {wide ? null : (
-            <div className="d-flex flex-row justify-content-center pt-2 px-3 mx-4">
-               <Button name="shop" />
-               <Button name="about" />
+            <div className="container row mx-auto mt-3">
+               <div className="col">
+                  <Button name="shop" link="shop" onClick={(e: any) => null} />
+               </div>
+
+               <div className="col">
+                  <Button name="about" link="shop" onClick={(e: any) => null} />
+               </div>
             </div>
          )}
          <h3 className="text-center pt-3">a razor with a hook.</h3>
          <footer>
             <p className="text-center pt-3">patent pending.</p>
+            <p className="text-center pt-3">
+               <small>copyright © 2021 kinetic synergies llc</small>
+            </p>
          </footer>
       </div>
    );

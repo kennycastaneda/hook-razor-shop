@@ -1,10 +1,12 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import LandingImage from "./LandingImage";
-import Search from "./Search";
+import Subscribe from "./Subscribe";
 import NotFound from "./NotFound";
 import Shop from "./Shop";
 import About from "./About";
+import Bag from "./Bag";
+import FinalOrder from "./FinalOrder";
 
 interface Prop {
    wide: boolean;
@@ -18,14 +20,20 @@ function Routes({ wide }: Prop) {
                <LandingImage wide={wide} />
             </div>
          </Route>
-         <Route exact={true} path="/search">
-            <Search />
+         <Route exact={true} path="/subscribe">
+            <Subscribe />
          </Route>
          <Route exact={true} path="/shop">
             <Shop />
          </Route>
          <Route exact={true} path="/about">
             <About />
+         </Route>
+         <Route exact={true} path="/bag">
+            <Bag />
+         </Route>
+         <Route exact={true} path="/checkout">
+            <FinalOrder />
          </Route>
          <Route>
             <NotFound />
