@@ -20,7 +20,7 @@ function Layout() {
             <Routes wide={wide} />
          </div>
          {wide ? null : (
-            <div className="d-flex flex-row justify-content-center pt-3">
+            <div className="d-flex flex-row justify-content-center pt-2 px-3 mx-4">
                <Button name="shop" />
                <Button name="about" />
             </div>

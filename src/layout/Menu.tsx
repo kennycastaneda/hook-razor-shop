@@ -59,9 +59,9 @@ function Menu({ wide }: Props) {
                      </Link>
                   </li>
                   <li className="nav-item col  ">
-                     <Link className="nav-link py-0" to="/cart">
+                     <Link className="nav-link py-0" to="/bag">
                         <span className="" />
-                        cart
+                        bag
                      </Link>
                   </li>
                   <li className="nav-item col  ">
