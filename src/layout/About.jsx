@@ -3,7 +3,7 @@ import React from "react"
 export default function Shop(){
 
     return(
-        <div className="container col-sm col-lg-6 py-1 px-5 mt-1 d-flex row justify-content-center mx-auto">
+        <div className="container col-sm col-lg-6 py-1 px-5 mt-1 d-flex row justify-content-center mx-auto fade-in-image">
             <div className = "container d-flex flex-row mx-5 justify-content-center">
                 <div className = "col p-1 ">
                    <img src={process.env.PUBLIC_URL + "/images/hook-about-2.jpeg"} alt="hook shop 1" className="w-100"></img>
@@ -24,7 +24,7 @@ export default function Shop(){
             <div className = "d-flex flex-row p-1 mt-3 text-center">
                    <img src={process.env.PUBLIC_URL + "/images/3dprintgif.gif"} alt="hook shaving gif"  className = "col"></img>
             </div>
-            <form className="mt-3 text-center">
+            <form className="mt-3 px-3 text-center">
                 share your email for discounts:
                <div className="container-fluid m-0 p-0 d-flex flex-row justify-content-center">
                 <input type="email" className="text-center w-75 mx-0 p-0" placeholder="email"/>

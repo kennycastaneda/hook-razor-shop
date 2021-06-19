@@ -8,7 +8,7 @@ export default function Shop() {
       useState("hook-shaving.gif");
 
    return (
-      <div className="container col-sm col-lg-6 py-1 px-5 mt-1 d-flex row justify-content-center mx-auto">
+      <div className="container col-sm col-lg-6 py-1 px-5 mt-1 d-flex row justify-content-center mx-auto fade-in-image">
          <div className="row p-1">
             <Button
                name="add to bag"

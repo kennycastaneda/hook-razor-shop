@@ -20,13 +20,13 @@ function Layout() {
             <Routes wide={wide} />
          </div>
          {wide ? null : (
-            <div className="container row mx-auto mt-3">
-               <div className="col">
-                  <Button name="shop" link="shop" onClick={(e: any) => null} />
+            <div className="container col-sm px-5 mt-1  d-flex row justify-content-center mx-auto">
+               <div className="col mx-1">
+                  <Button name="shop" link="shop" onClick={() => null} />
                </div>
 
-               <div className="col">
-                  <Button name="about" link="shop" onClick={(e: any) => null} />
+               <div className="col mx-1">
+                  <Button name="about" link="about" onClick={() => null} />
                </div>
             </div>
          )}

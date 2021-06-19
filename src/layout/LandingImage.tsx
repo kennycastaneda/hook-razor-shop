@@ -20,11 +20,11 @@ export default function LandingImage({ wide }: Props) {
          {wide ? (
             <div className="row hero-buttons">
                <div className="col">
-                  <Button name="shop" link="shop" onClick={(e: any) => null} />
+                  <Button name="shop" link="shop" onClick={() => null} />
                </div>
 
                <div className="col">
-                  <Button name="about" link="shop" onClick={(e: any) => null} />
+                  <Button name="about" link="shop" onClick={() => null} />
                </div>
             </div>
          ) : null}
