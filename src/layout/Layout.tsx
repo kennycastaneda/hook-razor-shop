@@ -20,7 +20,7 @@ function Layout() {
             <Routes wide={wide} />
          </div>
          {wide ? null : (
-            <div className="container col-sm px-5 mt-1  d-flex row justify-content-center mx-auto">
+            <div className="container col-sm px-5 mt-3  d-flex row justify-content-center mx-auto">
                <div className="col mx-1">
                   <Button name="shop" link="shop" onClick={() => null} />
                </div>
@@ -30,7 +30,7 @@ function Layout() {
                </div>
             </div>
          )}
-         <h3 className="text-center pt-3">a razor with a hook.</h3>
+         <h3 className="text-center pt-3">get a handle on shaving.</h3>
          <footer>
             <p className="text-center pt-3">patent pending.</p>
             <p className="text-center pt-3">

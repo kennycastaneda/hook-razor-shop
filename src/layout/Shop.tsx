@@ -64,6 +64,7 @@ export default function Shop() {
          <p className="text-center mb-0">
             includes hook razor and two razor cartridges.
          </p>
+         <p className="text-center mb-0">free shipping. free returns.</p>
          <div className="row p-1">
             <Button
                name="add to bag"
@@ -71,6 +72,7 @@ export default function Shop() {
                onClick={() => setBag(bag + 1)}
             />
          </div>
+
          <div className="row p-1">
             <Button
                name={`bag (${bag})`}

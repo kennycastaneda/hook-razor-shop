@@ -7,6 +7,8 @@ import Shop from "./Shop";
 import About from "./About";
 import Bag from "./Bag";
 import FinalOrder from "./FinalOrder";
+import Success from "./Succes";
+import Cancel from "./Cancel";
 
 interface Prop {
    wide: boolean;
@@ -34,6 +36,12 @@ function Routes({ wide }: Prop) {
          </Route>
          <Route exact={true} path="/checkout">
             <FinalOrder />
+         </Route>
+         <Route exact={true} path="/success">
+            <Success />
+         </Route>
+         <Route exact={true} path="/cancel">
+            <Cancel />
          </Route>
          <Route>
             <NotFound />

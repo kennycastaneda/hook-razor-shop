@@ -27,7 +27,7 @@ function Menu({ wide }: Props) {
                </ul>
             ) : null}
             <Link className="navbar-brand col text-center m-0 pt-2 pb-0" to="/">
-               <div className="text-black h1 mx-auto mt-3 ">
+               <div className="text-black display-4 mx-auto mt-3 ">
                   <span className="">hook razor</span>
                </div>
             </Link>
@@ -48,19 +48,19 @@ function Menu({ wide }: Props) {
                </ul>
             ) : (
                <ul className="nav navbar-nav d-flex flex-row text-light justify-content-center p-0 mx-auto">
-                  <li className="nav-item col  ">
+                  <li className="nav-item col ">
                      <Link className="nav-link py-0" to="/shop">
                         <span className="" />
                         shop
                      </Link>
                   </li>
-                  <li className="nav-item col">
+                  <li className="nav-item col ">
                      <Link className="nav-link py-0" to="/about">
                         <span className="" />
                         about
                      </Link>
                   </li>
-                  <li className="nav-item col">
+                  <li className="nav-item col ">
                      <Link className="nav-link py-0 " to="/bag">
                         <span className="" />
                         bag{" "}

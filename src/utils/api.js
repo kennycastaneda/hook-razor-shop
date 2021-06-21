@@ -1,3 +1,4 @@
+import { Stripe } from "stripe";
 const API_BASE_URL =
    process.env.REACT_APP_API_BASE_URL || "http://localhost:5000";
 
@@ -5,6 +6,7 @@ const API_BASE_URL =
  * Defines the default headers for these functions to work with `json-server`
  */
 const headers = new Headers();
+const stripe = window.Stripe("pk_test_HGy99jD3zyt2XkLVMaUvA5Es00K3LAn7yw");
 headers.append("Content-Type", "application/json");
 
 /**
@@ -55,4 +57,29 @@ export async function createSubscribe(email, signal) {
       signal,
    };
    return await fetchJson(url, options);
+}
+export async function createCheckout({ quantity }) {
+   const data = { data: quantity };
+   fetch(`${API_BASE_URL}/checkout`, {
+      method: "POST",
+      headers,
+      body: JSON.stringify(data),
+   })
+      .then(function (response) {
+         return response.json();
+      })
+      .then(function (session) {
+         return stripe.redirectToCheckout({ sessionId: session.id });
+      })
+      .then(function (result) {
+         // If redirectToCheckout fails due to a browser or network
+         // error, you should display the localized error message to your
+         // customer using error.message.
+         if (result.error) {
+            alert(result.error.message);
+         }
+      })
+      .catch(function (error) {
+         console.error("Error:", error);
+      });
 }

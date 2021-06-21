@@ -5,6 +5,7 @@ import { createSubscribe } from "../utils/api";
 export default function Subscribe() {
    const initialFormState = {
       email: "",
+      from_page: "subscribe",
    };
    const [formData, setFormData] = useState({ ...initialFormState });
    const [errors, setErrors] = useState(null);
@@ -24,7 +25,6 @@ export default function Subscribe() {
       } catch (err) {
          setErrors(err);
       }
-      setErrors(null);
       setFormData({ ...initialFormState });
    };
 
@@ -41,7 +41,7 @@ export default function Subscribe() {
                   name="email"
                   value={formData.email}
                   className="w-75 mx-0 px-2"
-                  placeholder="  enter your email"
+                  placeholder=" enter your email"
                   onChange={handleChange}
                   maxLength={100}
                />

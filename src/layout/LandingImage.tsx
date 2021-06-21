@@ -7,7 +7,7 @@ type Props = {
 
 export default function LandingImage({ wide }: Props) {
    return (
-      <div className="hero ">
+      <div className="hero">
          <img
             className="w-100 fade-in-image mt-3"
             src={
@@ -28,6 +28,10 @@ export default function LandingImage({ wide }: Props) {
                </div>
             </div>
          ) : null}
+         <div className="hero-text text-center mt-3">
+            <h2 className="display-5">your body isn't a straight line.</h2>
+            <h3 className="display-6">why should your razor be?</h3>
+         </div>
       </div>
    );
 }

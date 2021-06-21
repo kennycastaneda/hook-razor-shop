@@ -22,12 +22,21 @@ body {
    }
    .hero .hero-buttons {
       position: absolute;
-      top: 75%;
+      top: 60%;
       left: 65%;
-      width: 30%;
+      width: 34%;
    }
-   .hero .hero-buttons .btn {
+   .hero-text {
+      position: absolute;
+      top: 30%;
+      left: 65%;
+      width: 33%;
       color: white;
+      text-shadow: 0 0 3px rgba(50, 50, 50, 0.6);
+   }
+   .hero-buttons .btn {
+      color: white;
+      text-shadow: 0 0 1px #cac7c7, 0 0 3px rgba(70, 70, 70, 0.6);
       border-color: white;
       background-color: rgb(0, 0, 0, 0.2);
    }
