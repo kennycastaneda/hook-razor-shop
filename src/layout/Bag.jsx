@@ -3,13 +3,10 @@ import {useBagContext} from "./Context"
 import { Link } from "react-router-dom";
 import {createCheckout} from "../utils/api" 
 import ErrorAlert from "./ErrorAlert"
-//import {Stripe} from "stripe"
 
 export default function Bag(){
     const {bag, setBag}=useBagContext();
     const [errors, setErrors] = useState(null);
-   // const stripe = Stripe("pk_test_HGy99jD3zyt2XkLVMaUvA5Es00K3LAn7yw");
-
     const handleCheckout =  async (e) => {
         e.preventDefault();
         try {

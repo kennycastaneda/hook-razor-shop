@@ -7,7 +7,7 @@ import Shop from "./Shop";
 import About from "./About";
 import Bag from "./Bag";
 import FinalOrder from "./FinalOrder";
-import Success from "./Succes";
+import Success from "./Success";
 import Cancel from "./Cancel";
 
 interface Prop {

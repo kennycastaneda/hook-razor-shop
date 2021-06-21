@@ -28,9 +28,9 @@ export default function LandingImage({ wide }: Props) {
                </div>
             </div>
          ) : null}
-         <div className="hero-text text-center mt-3">
-            <h2 className="display-5">your body isn't a straight line.</h2>
-            <h3 className="display-6">why should your razor be?</h3>
+         <div className="hero-text text-center mt-3 px-3">
+            <h1 className="display-5 font-italic">your body has curves.</h1>
+            <h1 className="display-6">shouldn't your razor?</h1>
          </div>
       </div>
    );

@@ -60,8 +60,8 @@ export default function Shop() {
          <h2 className="mt-3 mb-0 text-center">
             designed & made in houston, tx
          </h2>
-         <p className="text-center mb-0">natural grip variations.</p>
-         <p className="mt-3 text-center mb-0">hang for storage.</p>
+         <p className="mt-3 text-center mb-0">natural grip variations.</p>
+         <p className="text-center mb-0">hang to dry and store.</p>
          <p className="text-center mb-0">improved shaving experience.</p>
          <h4 className="mt-3 text-center mb-0">
             our current design is 3d printed.{" "}

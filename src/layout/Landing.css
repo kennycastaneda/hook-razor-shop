@@ -10,7 +10,7 @@ body {
    font-size: xx-small;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
    body {
       font-size: x-large;
    }
@@ -28,11 +28,11 @@ body {
    }
    .hero-text {
       position: absolute;
-      top: 30%;
+      top: 25%;
       left: 65%;
       width: 33%;
       color: white;
-      text-shadow: 0 0 3px rgba(50, 50, 50, 0.6);
+      text-shadow: 0 0 3px rgba(50, 50, 50, 0.8), 0 0 6px rgba(50, 50, 50, 0.8);
    }
    .hero-buttons .btn {
       color: white;
