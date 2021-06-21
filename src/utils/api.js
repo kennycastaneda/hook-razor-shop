@@ -6,10 +6,9 @@ const API_BASE_URL =
  */
 
 const STRIPE_TEST =
-   process.env.STRIPE_TEST || "pk_test_HGy99jD3zyt2XkLVMaUvA5Es00K3LAn7yw";
+   process.env.STRIPE_TEST || "pk_live_bo67iFEjtZkAeH5mMPRbwEOc00irQCQ413";
 const headers = new Headers();
 const stripe = window.Stripe(`${STRIPE_TEST}`);
-console.log(process.env);
 headers.append("Content-Type", "application/json");
 
 /**
