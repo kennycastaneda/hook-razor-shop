@@ -30,7 +30,7 @@ function Layout() {
                </div>
             </div>
          )}
-         <h3 className="text-center pt-3">get a new handle on your shave.</h3>
+         <h3 className="text-center pt-3">get a handle on your shave.</h3>
          <footer>
             <p className="text-center pt-3">patent pending.</p>
             <p className="text-center pt-3">
