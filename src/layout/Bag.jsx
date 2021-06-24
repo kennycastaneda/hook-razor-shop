@@ -3,13 +3,16 @@ import {useBagContext} from "./Context"
 import { Link } from "react-router-dom";
 import {createCheckout} from "../utils/api" 
 import ErrorAlert from "./ErrorAlert"
+import "./Landing.css"
 
 export default function Bag(){
     const {bag, setBag}=useBagContext();
     const [errors, setErrors] = useState(null);
+    const [redirect, setRedirect]=useState(false);
     const handleCheckout =  async (e) => {
         e.preventDefault();
         try {
+            setRedirect(true);
            await createCheckout({"quantity":bag});
         } catch (err) {
            setErrors(err);
@@ -34,9 +37,8 @@ export default function Bag(){
                 <button className = "btn btn-outline-dark btn-sm m-1 col-4 font-weight-bold" onClick={()=>setBag(bag+1)}>+</button>
             </div>
             <div className="w-100 px-3 mx-auto mt-3" display={bag?"none":"block"}>
-                <Link to={bag?"/checkout":"/bag"}>
+                <h3 className="text-center blink" hidden={!redirect}>...redirecting to stripe checkout</h3>
                 <button className="btn btn-dark w-100" disabled={!bag} onClick={handleCheckout}>checkout ${bag*15}<small>.00</small></button>
-                </Link>
             </div>
             <ErrorAlert error={errors} />
         </div>
