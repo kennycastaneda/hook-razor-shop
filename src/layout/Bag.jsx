@@ -74,7 +74,7 @@ export default function Bag(){
                 </div>
             </div>
             <p className="mt-3 text-center">each hook razor comes with two razor cartridges.</p>
-            <p className="text-center mb-0">free shipping. free returns.</p>
+            <p className="text-center mb-0">free shipping. free returns. zero tax.</p>
             <h3 className="mt-3 text-center">total orders: {bag}</h3>
             
             <div className="w-100 px-3 mx-auto mt-3" display={bag?"none":"block"}>

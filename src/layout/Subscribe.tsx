@@ -33,6 +33,13 @@ export default function Subscribe() {
          <h2 className="mt-3 text-center ">
             subscribe to monthly razor cartridge delivery.
          </h2>
+         <div className="d-flex flex-row p-1 mt-3 text-center">
+            <img
+               src={process.env.PUBLIC_URL + "/images/hook-white.jpg"}
+               alt="hook shaving gif"
+               className="col"
+            ></img>
+         </div>
          <form className="mt-3 text-center" onSubmit={handleSubmit}>
             share your email to learn more:
             <div className="container-fluid m-0 px-3 d-flex flex-row justify-content-center">

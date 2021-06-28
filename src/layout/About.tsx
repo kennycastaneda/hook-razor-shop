@@ -91,14 +91,15 @@ export default function Shop() {
             </div>
             <p hidden={!submit}>thank you.</p>
          </form>
-
          <ErrorAlert error={errors} />
-         {/* <div className="mt-3 row p-1">
-                <Button name="Add To Bag" link="about"/>
-            </div >
-            <div className="row p-1">
-                <Button name="Ckeckout" link="bag"/>           
-            </div> */}
+
+         <div className="d-flex flex-row p-1 mt-3 text-center">
+            <img
+               src={process.env.PUBLIC_URL + "/images/hook-prototypes.jpeg"}
+               alt="hook shaving gif"
+               className="col"
+            ></img>
+         </div>
       </div>
    );
 }
