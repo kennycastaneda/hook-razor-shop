@@ -87,7 +87,7 @@ export async function createCheckout(quantities) {
 }
 export async function createCartridge(quantity) {
    const data = { data: quantity };
-   fetch(`${API_BASE_URL}/checkout`, {
+   fetch(`${API_BASE_URL}/cartridge`, {
       method: "POST",
       headers,
       body: JSON.stringify(data),
