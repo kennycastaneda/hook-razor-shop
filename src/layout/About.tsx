@@ -97,6 +97,7 @@ export default function Shop() {
          <ErrorAlert error={errors} />
 
          <div className="row p-1 mt-3 text-center">
+            <h4>a hooked handle has more to offer.</h4>
             <img
                src={process.env.PUBLIC_URL + "/images/hook-prototypes.jpeg"}
                alt="hook shaving gif"
