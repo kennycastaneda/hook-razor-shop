@@ -33,16 +33,16 @@ function Menu({ wide }: Props) {
             </Link>
             {wide ? (
                <ul className="nav navbar-nav col d-flex flex-row text-light justify-content-end p-0">
-                  <li className="nav-item mr-3  mt-3">
-                     <Link className="nav-link" to="/bag">
-                        <span className="" />
-                        bag {`(${bag})`}
-                     </Link>
-                  </li>
-                  <li className="nav-item pr-5 ml-1 mr-3 mt-3">
+                  <li className="nav-item mr-3  mt-3 ">
                      <Link className="nav-link " to="/subscribe">
                         <span className="" />
                         subscribe
+                     </Link>
+                  </li>
+                  <li className="nav-item pr-5 ml-1 mr-3 mt-3">
+                     <Link className="nav-link" to="/bag">
+                        <span className="" />
+                        bag {`[${bag}]`}
                      </Link>
                   </li>
                </ul>
@@ -60,6 +60,12 @@ function Menu({ wide }: Props) {
                         about
                      </Link>
                   </li>
+                  <li className="nav-item col  ">
+                     <Link className="nav-link py-0" to="/subscribe">
+                        <span className="" />
+                        subscribe
+                     </Link>
+                  </li>
                   <li className="nav-item col ">
                      <Link className="nav-link py-0 " to="/bag">
                         <span className="" />
@@ -69,12 +75,6 @@ function Menu({ wide }: Props) {
                         ) : (
                            <p className="small-nav-text text-center">[{bag}]</p>
                         )}
-                     </Link>
-                  </li>
-                  <li className="nav-item col  ">
-                     <Link className="nav-link py-0" to="/subscribe">
-                        <span className="" />
-                        subscribe
                      </Link>
                   </li>
                </ul>
