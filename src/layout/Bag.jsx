@@ -30,29 +30,6 @@ export default function Bag(){
                 <img
                   src={
                      process.env.PUBLIC_URL +
-                     `/images/hook-shop-3-white.jpg`
-                  }
-                  alt="hook white bag"
-                  className="w-100"
-
-               />
-                </div>
-                <div className="col text-center m-auto px-0">
-                    <h3 className="">qty: {whiteBag}</h3>
-                    <button className = "btn btn-outline-dark btn-sm m-1 col-4" onClick={()=> whiteBag===0?null:(setBag(bag-1),setWhiteBag(whiteBag-1))}>-</button>
-                    <button className = "btn btn-outline-dark btn-sm m-1 col-4 font-weight-bold" onClick={()=>{
-                            setBag(bag+1);
-                            setWhiteBag(whiteBag+1);
-                            }}>
-                    +
-                    </button>
-                </div>
-            </div>
-            <div className="row px-0 mt-3">
-                <div className="col px-0">
-                <img
-                  src={
-                     process.env.PUBLIC_URL +
                      `/images/hook-shop-3.jpg`
                   }
                   alt="hook black bag"
@@ -61,6 +38,7 @@ export default function Bag(){
                />
                 </div>
                 <div className="col text-center m-auto px-0">
+                    <h3>black</h3>
                     <h3 className="">qty: {blackBag}</h3>
                     <button className = "btn btn-outline-dark btn-sm m-1 col-4" onClick={()=> blackBag===0?null:(setBag(bag-1),setBlackBag(blackBag-1))}>-</button>
                     <button className = "btn btn-outline-dark btn-sm m-1 col-4 font-weight-bold" onClick={()=>{
@@ -71,7 +49,31 @@ export default function Bag(){
                     </button>
                 </div>
             </div>
-            <p className="mt-3 text-center">hook razor and two razor cartridges per order.</p>
+            <div className="row px-0 mt-3">
+                <div className="col px-0">
+                <img
+                  src={
+                     process.env.PUBLIC_URL +
+                     `/images/hook-shop-3-white.jpg`
+                  }
+                  alt="hook white bag"
+                  className="w-100"
+
+               />
+                </div>
+                <div className="col text-center m-auto px-0">
+                    <h3>white</h3>
+                    <h3 className="">qty: {whiteBag}</h3>
+                    <button className = "btn btn-outline-dark btn-sm m-1 col-4" onClick={()=> whiteBag===0?null:(setBag(bag-1),setWhiteBag(whiteBag-1))}>-</button>
+                    <button className = "btn btn-outline-dark btn-sm m-1 col-4 font-weight-bold" onClick={()=>{
+                            setBag(bag+1);
+                            setWhiteBag(whiteBag+1);
+                            }}>
+                    +
+                    </button>
+                </div>
+            </div>
+            <p className="mt-3 text-center">each hook razor comes with two razor cartridges.</p>
             <p className="text-center mb-0">free shipping. free returns.</p>
             <h3 className="mt-3 text-center">total orders: {bag}</h3>
             

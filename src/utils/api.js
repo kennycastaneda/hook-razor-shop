@@ -62,7 +62,6 @@ export async function createSubscribe(email, signal) {
 }
 export async function createCheckout(quantities) {
    const data = { data: quantities };
-   console.log(data);
    fetch(`${API_BASE_URL}/checkout`, {
       method: "POST",
       headers,
