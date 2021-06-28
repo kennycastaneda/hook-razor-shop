@@ -21,8 +21,8 @@ export default function Bag(){
     return(
         <>
         <script src="https://js.stripe.com/v3/"></script>
-        <div className = "container col-sm col-lg-6 py-1 px-5 mt-1 d-flex row justify-content-center mx-auto fade-in-image">
-            <h2 className = "mt-3 text-center">
+        <div className = "container col-sm col-lg-6 py-1 px-5 mt-3 d-flex row justify-content-center mx-auto fade-in-image">
+            <h2 className = "text-center">
                 bag checkout
             </h2>
             <div className="row px-0 mt-3">

@@ -11,7 +11,7 @@ export default function Shop() {
    );
 
    return (
-      <div className="container col-sm col-lg-6 py-1 px-5 mt-1 d-flex row justify-content-center mx-auto fade-in-image">
+      <div className="container col-sm col-lg-6 py-1 px-5 mt-3 d-flex row justify-content-center mx-auto fade-in-image">
          <div className="container d-flex flex-row justify-content-center">
             <div className="col p-1 ">
                <img

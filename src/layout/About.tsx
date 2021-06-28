@@ -32,7 +32,7 @@ export default function Shop() {
    };
 
    return (
-      <div className="container col-sm col-lg-6 py-1 px-5 mt-1 d-flex row justify-content-center mx-auto fade-in-image">
+      <div className="container col-sm col-lg-6 py-1 px-5 mt-3 d-flex row justify-content-center mx-auto fade-in-image">
          <div className="container d-flex flex-row mx-5 justify-content-center">
             <div className="col p-1 ">
                <img
@@ -75,17 +75,20 @@ export default function Shop() {
          </div>
          <form className="mt-3 px-3 text-center" onSubmit={handleSubmit}>
             share your email for discounts:
-            <div className="container-fluid m-0 p-0 d-flex flex-row justify-content-center">
+            <div className="container-fluid m-0 p-0 d-flex flex-row justify-content-center ">
                <input
                   type="email"
                   name="email"
                   value={formData.email}
-                  className="w-75 mx-0 px-2"
+                  className="w-75 mx-0 px-2 border border-dark "
                   placeholder=" enter your email"
                   onChange={handleChange}
                   maxLength={100}
                />
-               <button type="submit" className="btn btn-dark w-25 mx-0">
+               <button
+                  type="submit"
+                  className="btn btn-dark w-25 mx-0 rounded-0 "
+               >
                   {">"}
                </button>
             </div>
@@ -93,7 +96,7 @@ export default function Shop() {
          </form>
          <ErrorAlert error={errors} />
 
-         <div className="d-flex flex-row p-1 mt-3 text-center">
+         <div className="row p-1 mt-3 text-center">
             <img
                src={process.env.PUBLIC_URL + "/images/hook-prototypes.jpeg"}
                alt="hook shaving gif"
