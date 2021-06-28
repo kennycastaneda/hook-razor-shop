@@ -4,19 +4,25 @@ export const BagContext = createContext();
 
 export const ContextProvider = ({ children }) => {
   const [click, setClick] = useState(false);
-  const [bag, setBag] = useState(0)
+  const [bag, setBag] = useState(0);
+  const [blackBag, setBlackBag]=useState(0);
+  const [whiteBag, setWhiteBag]=useState(0);
   const handleBagClick = () => {
     
   };
   const handleBagSubmit = () => {
     
-    };
+  };
   return (
     <BagContext.Provider
       value={{
         click,
         setClick,
         bag,
+        blackBag,
+        whiteBag,
+        setWhiteBag,
+        setBlackBag,
         setBag,
         handleBagClick,
         handleBagSubmit,

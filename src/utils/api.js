@@ -60,8 +60,9 @@ export async function createSubscribe(email, signal) {
    };
    return await fetchJson(url, options);
 }
-export async function createCheckout({ quantity }) {
-   const data = { data: quantity };
+export async function createCheckout(quantities) {
+   const data = { data: quantities };
+   console.log(data);
    fetch(`${API_BASE_URL}/checkout`, {
       method: "POST",
       headers,
