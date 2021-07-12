@@ -42,7 +42,7 @@ function Menu({ wide }: Props) {
                   <li className="nav-item pr-5 ml-1 mr-3 mt-3">
                      <Link className="nav-link" to="/bag">
                         <span className="" />
-                        bag {`[${bag}]`}
+                        bag {`(${bag})`}
                      </Link>
                   </li>
                </ul>
