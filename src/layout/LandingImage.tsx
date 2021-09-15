@@ -24,7 +24,7 @@ export default function LandingImage({ wide }: Props) {
                </div>
 
                <div className="col">
-                  <Button name="about" link="shop" onClick={() => null} />
+                  <Button name="about" link="about" onClick={() => null} />
                </div>
             </div>
          ) : null}
